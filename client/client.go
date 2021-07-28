@@ -7650,8 +7650,8 @@ func (s *UpdateContainerGroupRequestTag) SetValue(v string) *UpdateContainerGrou
 
 type UpdateContainerGroupRequestVolume struct {
 	NFSVolume        *UpdateContainerGroupRequestVolumeNFSVolume        `json:"NFSVolume,omitempty" xml:"NFSVolume,omitempty" require:"true" type:"Struct"`
-	ConfigFileVolume *UpdateContainerGroupRequestVolumeConfigFileVolume `json:"ConfigFileVolume,omitempty" xml:"ConfigFileVolume,omitempty" require:"true" type:"Struct"`
-	EmptyDirVolume   *UpdateContainerGroupRequestVolumeEmptyDirVolume   `json:"EmptyDirVolume,omitempty" xml:"EmptyDirVolume,omitempty" require:"true" type:"Struct"`
+	ConfigFileVolume *UpdateContainerGroupRequestVolumeConfigFileVolume `json:"ConfigFileVolume,omitempty" xml:"ConfigFileVolume,omitempty" type:"Struct"`
+	EmptyDirVolume   *UpdateContainerGroupRequestVolumeEmptyDirVolume   `json:"EmptyDirVolume,omitempty" xml:"EmptyDirVolume,omitempty" type:"Struct"`
 	Type             *string                                            `json:"Type,omitempty" xml:"Type,omitempty"`
 	Name             *string                                            `json:"Name,omitempty" xml:"Name,omitempty"`
 }
@@ -8281,7 +8281,7 @@ func (s *UpdateContainerGroupRequestContainerLivenessProbeHttpGet) SetPath(v str
 }
 
 type UpdateContainerGroupRequestContainerEnvironmentVar struct {
-	FieldRef *UpdateContainerGroupRequestContainerEnvironmentVarFieldRef `json:"FieldRef,omitempty" xml:"FieldRef,omitempty" require:"true" type:"Struct"`
+	FieldRef *UpdateContainerGroupRequestContainerEnvironmentVarFieldRef `json:"FieldRef,omitempty" xml:"FieldRef,omitempty" type:"Struct"`
 	Key      *string                                                     `json:"Key,omitempty" xml:"Key,omitempty"`
 	Value    *string                                                     `json:"Value,omitempty" xml:"Value,omitempty"`
 }
