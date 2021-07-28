@@ -7776,9 +7776,9 @@ func (s *UpdateContainerGroupRequestVolumeEmptyDirVolume) SetMedium(v string) *U
 }
 
 type UpdateContainerGroupRequestContainer struct {
-	ReadinessProbe                              *UpdateContainerGroupRequestContainerReadinessProbe                                `json:"ReadinessProbe,omitempty" xml:"ReadinessProbe,omitempty" require:"true" type:"Struct"`
-	SecurityContext                             *UpdateContainerGroupRequestContainerSecurityContext                               `json:"SecurityContext,omitempty" xml:"SecurityContext,omitempty" require:"true" type:"Struct"`
-	LivenessProbe                               *UpdateContainerGroupRequestContainerLivenessProbe                                 `json:"LivenessProbe,omitempty" xml:"LivenessProbe,omitempty" require:"true" type:"Struct"`
+	ReadinessProbe                              *UpdateContainerGroupRequestContainerReadinessProbe                                `json:"ReadinessProbe,omitempty" xml:"ReadinessProbe,omitempty" require:"false" type:"Struct"`
+	SecurityContext                             *UpdateContainerGroupRequestContainerSecurityContext                               `json:"SecurityContext,omitempty" xml:"SecurityContext,omitempty" require:"false" type:"Struct"`
+	LivenessProbe                               *UpdateContainerGroupRequestContainerLivenessProbe                                 `json:"LivenessProbe,omitempty" xml:"LivenessProbe,omitempty" require:"false" type:"Struct"`
 	EnvironmentVar                              []*UpdateContainerGroupRequestContainerEnvironmentVar                              `json:"EnvironmentVar,omitempty" xml:"EnvironmentVar,omitempty" type:"Repeated"`
 	Tty                                         *bool                                                                              `json:"Tty,omitempty" xml:"Tty,omitempty"`
 	WorkingDir                                  *string                                                                            `json:"WorkingDir,omitempty" xml:"WorkingDir,omitempty"`
